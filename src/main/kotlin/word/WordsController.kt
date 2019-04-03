@@ -10,12 +10,12 @@ import java.util.*
 class WordsController {
 
     @PostMapping("/words")
-    fun words(@RequestBody sentence: Sentence): Any {
+    fun words(@RequestBody sentence: Sentence): Map<String, Int> {
          return Collections.singletonMap(Sentence.WORDS, sentence.words())
     }
 
     @PostMapping("/letters")
-    fun letters(@RequestBody sentence: Sentence): Any {
+    fun letters(@RequestBody sentence: Sentence): Map<String, Int> {
         return Collections.singletonMap(Sentence.LETTERS, sentence.letters())
     }
 
