@@ -1,6 +1,6 @@
 package word
 
-class Sentence() {
+class Sentence {
 
     lateinit var body: String
 
